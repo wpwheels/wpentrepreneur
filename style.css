@@ -1,0 +1,282 @@
+/*
+Theme Name: WPEntrepreneur
+Theme URI: https://wpwheels.com/themes/wpentrepreneur/
+Author: WPWheels
+Description: WPEntrepreneur is an elegantly designed theme tailored for creating stunning wpentrepreneur websites. Ideal for those seeking a polished online presence, this theme boasts a lightweight, speed-optimized framework. Key highlights include eye-catching design patterns such as card layouts, a portfolio section, testimonials, and skill showcases. Perfect for showcasing entrepreneurial ventures with style and efficiency.
+Requires at least:  6.2
+Tested up to: 6.5
+Requires PHP: 7.2
+Version: 1.0.0
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Text Domain: wpentrepreneur
+
+WPEntrepreneur WordPress Theme, Copyright (c) 2024, WPWheels https://wpwheels.com/
+WPEntrepreneur is distributed under the terms of the GNU GPL.
+*/
+
+/* CSS Reset
+---------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body{
+	font-family: 'RobotoMono-Regular', sans-serif;
+}
+
+html {
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+a,
+a:focus,
+a:hover {
+	/* text-decoration: underline; */
+}
+
+b,
+strong {
+	font-weight: var(--wp--custom--font-weight--semi-bold);
+}
+
+ol,
+ul {
+	padding: 0;
+}
+
+ol:where(:not([class*="wp-block"])),
+ol:where(.wp-block-list),
+ul:where(:not([class*="wp-block"])),
+ul:where(.wp-block-list) {
+	padding-inline-start: var(--wp--preset--spacing--medium);
+}
+
+div[class*="wp-block-"] figcaption {
+	color: var(--wp--preset--color--secondary);
+	font-size: var(--wp--preset--font-size--x-small);
+	margin-bottom: 0;
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* Standardize form styling
+--------------------------------------------- */
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+input[type="button"],
+input[type="email"],
+input[type="search"],
+input[type="submit"],
+input[type="text"],
+textarea {
+	-webkit-appearance: none;
+}
+
+input:not([type="submit"]),
+select,
+textarea,
+.wp-block-post-comments-form input:not([type="submit"]):not([type="checkbox"]),
+.wp-block-post-comments-form textarea {
+	color: var(--wp--preset--color--main);
+	border-radius: 5px;
+	border: solid 1px var(--wp--preset--color--main-accent);
+	padding: .5em 1em;
+	font-size: var(--wp--preset--font-size--small);
+	width: 100%;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+	outline-color: var(--wp--preset--color--primary);
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+	width: auto;
+}
+
+label {
+	width: 100%;
+	display: block;
+}
+
+::placeholder {
+	color: var(--wp--preset--color--secondary);
+	font-size: var(--wp--preset--font-size--small);
+	opacity: 0.75;
+}
+
+/* Helper styles that can't be done via theme.json
+---------------------------------------------------------------------------- */
+
+a.more-link {
+	display: block;
+}
+
+/* Inline code */
+*:not(.wp-block-code) > code {
+	background-color: var(--wp--preset--color--tertiary);
+	font-weight: var(--wp--custom--font-weight--medium);;
+	padding: 3px 5px;
+	position: relative;
+	border-radius: 3px;
+}
+
+/* Adjust terms at bottom of posts */
+.single .wp-block-group .wp-block-post-terms,
+.blog .wp-block-group .wp-block-post-terms {
+	margin-bottom: -8px !important;
+}
+
+/* Remove margin on term description on archive pages */
+.wp-block-term-description p:last-child {
+	margin-bottom: 0;
+}
+
+/* Remove last separator on post list */
+.remove-border-and-padding .wp-block-post-template li:last-child .wp-block-separator {
+	display: none;
+}
+
+/* Hide post meta div if no tags assigned */
+.single .wp-block-group:has(> .post-meta:empty) {
+	display: none;
+}
+
+/* Custom CSS */
+
+body{
+	overflow-x: hidden;
+}
+
+/* Portfolio Masonry Gallery  */
+.wpentrepreneur-portfolio-name {
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear 0s;
+}
+
+.has-dark-grey-color-background-color{
+    transition: all 0.3s linear 0s;
+}
+
+.wpentrepreneur-portfolio-img:hover .has-dark-grey-color-background-color{
+    background: #2828288f !important
+}
+
+.wpentrepreneur-portfolio-img:hover .wpentrepreneur-portfolio-name{
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Contact Form 7 */
+textarea.wpcf7-form-control.wpcf7-textarea, input:not([type="submit"]){
+	background: transparent;
+}
+input[type="submit"]{
+	padding: 8px 30px;
+	transition: all 0.3s linear 0s;
+}
+input[type="submit"]:hover{
+	background: #245fb2;
+	color: white;
+	transition: all 0.3s linear 0s;
+}
+
+/* Animate CSS */
+.animate__animated {
+	--animate-duration: 2s;
+	--animate-delay: 0.9s;
+  }
+
+/* WP CORE BUTTOn */
+a.wp-block-button__link, a.wp-block-pages-list__item__link {
+    text-decoration: none;
+	transition: all 0.2s linear 0s;
+}
+
+a.wp-block-button__link:hover{
+	background:var(--wp--preset--color--highlight-color) !important;
+    color: var(--wp--preset--color--white) !important;
+}
+
+/* WP CORE Links */
+.wp-block-pages-list__item__link:hover,a.wp-block-pages-list__item__link, .wp-block-cover__inner-container a{
+	color: #FABD25 !important;
+}
+.column-hover-color{
+	transition: all 0.2s linear 0s;
+}
+.column-hover-color:hover{
+	background-color: var(--wp--preset--color--highlight-color) !important;
+}
+.column-hover-color:hover *{
+
+	color: var(--wp--preset--color--white) !important;
+}
+
+/*Post Title */
+.wp-block-post-title a{
+	text-decoration:none;
+  transition: all 0.2s linear 0s;
+  
+  }
+  .wp-block-post-title a:hover, .wp-block-cover__inner-container a:hover{
+	color: #FABD25 !important;
+  
+  }
+
+/* Hero Dark Responsive*/
+@media only screen and (max-width:781px){
+
+    .hero-wrap-text{
+        order: 2;
+        text-align: center;
+    }
+
+    .hero-wrap-text .wp-block-buttons{
+        justify-content: center;
+    }
+
+    .hero-wrap-image{
+        order: 1;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 1600px){
+	.hero-wrap-image{
+		flex-basis: 30% !important;
+	}
+}
+
+@media only screen and (max-width: 1369px){
+
+	.hero-wrap-text {
+	  flex-basis: 70% !important;
+	}
+	
+	.hero-wrap{
+		padding-top: 30px !important;
+		  padding-bottom: 30px !important;
+	}
+	
+	
+	}
