@@ -78,3 +78,12 @@ Placeholder image is crated by our own.
 bg-texture.webp
 BG Texture image is crated by our own.
 
+wow.min.js
+license: https://github.com/graingert/WOW/blob/master/LICENSE
+Source: https://github.com/graingert/WOW
+
+
+animate.min.css
+license: https://github.com/animate-css/animate.css/blob/main/LICENSE
+Source: https://github.com/animate-css/animate.css
+

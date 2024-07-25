@@ -206,7 +206,7 @@ input[type="submit"]:hover{
   }
 
 /* WP CORE BUTTOn */
-a.wp-block-button__link, a.wp-block-pages-list__item__link {
+a.wp-block-button__link, a.wp-block-pages-list__item__link, .wp-block-cover__inner-container a{
     text-decoration: none;
 	transition: all 0.2s linear 0s;
 }
@@ -217,7 +217,7 @@ a.wp-block-button__link:hover{
 }
 
 /* WP CORE Links */
-.wp-block-pages-list__item__link:hover,a.wp-block-pages-list__item__link, .wp-block-cover__inner-container a{
+.wp-block-pages-list__item__link:hover,a.wp-block-pages-list__item__link[aria-current="page"] {
 	color: #FABD25 !important;
 }
 .column-hover-color{
@@ -233,15 +233,37 @@ a.wp-block-button__link:hover{
 
 /*Post Title */
 .wp-block-post-title a{
-	text-decoration:none;
-  transition: all 0.2s linear 0s;
-  
-  }
-  .wp-block-post-title a:hover, .wp-block-cover__inner-container a:hover{
-	color: #FABD25 !important;
-  
+  text-decoration:none;
+transition: all 0.2s linear 0s;
+
+}
+.wp-block-post-title a:hover, .wp-block-cover__inner-container a:hover{
+  color: #FABD25 !important;
+
+}
+
+/* banner css */
+
+.hero-wrap-text {
+	flex-basis: 70% !important;
   }
 
+.hero-wrap-image{
+	flex-basis: 30% !important;
+}
+
+.hero-wrap-text p.has-monospace-font-family{
+	padding-right: 45px;
+}
+
+.site-header .wp-block-navigation-link a{
+    transition: all 0.2s linear 0s;
+}
+
+.site-header .wp-block-navigation-link a:hover {
+    color: #FABD25;
+    text-decoration: none;
+}
 /* Hero Dark Responsive*/
 @media only screen and (max-width:781px){
 
@@ -257,26 +279,18 @@ a.wp-block-button__link:hover{
     .hero-wrap-image{
         order: 1;
         text-align: center;
+		max-width: 70%;
+        margin: auto !important;
     }
 
 }
 
-@media only screen and (max-width: 1600px){
-	.hero-wrap-image{
-		flex-basis: 30% !important;
-	}
-}
 
 @media only screen and (max-width: 1369px){
 
-	.hero-wrap-text {
-	  flex-basis: 70% !important;
-	}
-	
 	.hero-wrap{
 		padding-top: 30px !important;
-		  padding-bottom: 30px !important;
+		padding-bottom: 30px !important;
 	}
-	
-	
-	}
+
+}
