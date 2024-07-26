@@ -264,6 +264,9 @@ transition: all 0.2s linear 0s;
     color: #FABD25;
     text-decoration: none;
 }
+.hero-wrap-text > div > * {
+	margin-left: 0 !important;
+}
 /* Hero Dark Responsive*/
 @media only screen and (max-width:781px){
 
