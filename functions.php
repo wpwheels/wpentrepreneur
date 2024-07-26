@@ -226,3 +226,9 @@ function template_part_areas( array $areas ) {
 }
 add_filter( 'default_wp_template_part_areas', __NAMESPACE__ . '\template_part_areas' );
 
+// Admin only classes.
+if ( is_admin() ) {
+
+    // Recommend plugins.
+    require_once get_theme_file_path( '/dashboard/class-dashboard.php' );
+}
