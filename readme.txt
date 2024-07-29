@@ -1,8 +1,8 @@
 === WPEntrepreneur WordPress Block Theme ===
 Contributors: wpwheels
-Tags: blog, portfolio, entertainment, grid-layout, one-column, two-columns, three-columns, four-columns, block-patterns, block-styles, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, full-width-template, rtl-language-support, style-variations, template-editing, theme-options, translation-ready, wide-blocks
+Tags: blog, portfolio, entertainment, grid-layout, one-column, two-columns, three-columns, four-columns, block-patterns, block-styles, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, full-width-template, style-variations, template-editing, theme-options, wide-blocks
 Requires at least: 6.2
-Tested up to: 6.5
+Tested up to: 6.6
 Requires PHP: 7.2
 Stable tag: 1.0.0
 License: GPLv3 or later
@@ -15,7 +15,7 @@ WPEntrepreneur is an elegantly designed theme tailored for creating stunning wpe
 
 == Copyright ==
 
-WPEntrepreneur Theme, (C) 2023 WP Wheels
+WPEntrepreneur Theme, (C) 2024 WPWheels
 WPEntrepreneur is distributed under the terms of the GNU GPL.
 
 WPEntrepreneur Theme bundles the following third-party resources:
@@ -65,7 +65,7 @@ Source: https://www.pexels.com/photo/creative-painters-drawing-at-table-5642024/
 pexels-zdmit.jpg
 License: pexels provides images under CC0 1.0 Universal (CC0 1.0) 
 license: https://creativecommons.org/publicdomain/zero/1.0/
-Source: https://www.pexels.com/photo/unrecognizable-woman-demonstrating-retro-photo-camera-6833461/
+Source: https://www.pexels.com/photo/young-woman-holding-a-coffee-cup-and-standing-in-front-of-a-modern-building-in-city-19084432/
 
 pexels-cottonbro.jpg
 License: pexels provides images under CC0 1.0 Universal (CC0 1.0) 
