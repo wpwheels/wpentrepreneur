@@ -56,8 +56,8 @@
         <!-- wp:button {"backgroundColor":"secondary","textColor":"primary","width":50,"style":{"spacing":{"padding":{"left":"0","right":"0","top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"className":"is-style-fill"} -->
         <div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-fill"><a
                 class="wp-block-button__link has-primary-color has-secondary-background-color has-text-color has-background has-link-color wp-element-button"
-                style="padding-top:var(--wp--preset--spacing--small);padding-right:0;padding-bottom:var(--wp--preset--spacing--small);padding-left:0">More
-                Posts</a></div>
+                style="padding-top:var(--wp--preset--spacing--small);padding-right:0;padding-bottom:var(--wp--preset--spacing--small);padding-left:0"><?php _e('More
+                Posts', 'wpentrepreneur'); ?></a></div>
         <!-- /wp:button -->
     </div>
     <!-- /wp:buttons -->

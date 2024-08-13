@@ -3,7 +3,7 @@
  * This file adds functions to the WPEntrepreneur WordPress theme.
  *
  * @package wpentrepreneur
- * @author  WP Wheels
+ * @author  WPWheels
  * @license GNU General Public License v2 or later
  * @link    https://wpwheels.com
  */
@@ -35,7 +35,7 @@ function enqueue_style_sheet() {
 
 	// JS
 	wp_enqueue_script(sanitize_title(__NAMESPACE__ . 'wow-js'), get_template_directory_uri() . '/assets/js/wow.min.js', array(), wp_get_theme()->get( 'Version' ));
-	wp_enqueue_script(sanitize_title(__NAMESPACE__ . 'custom-js'), get_template_directory_uri() .'/assets/js/custom.js', array(), wp_get_theme()->get( 'Version' ));
+	wp_enqueue_script(sanitize_title(__NAMESPACE__ . 'custom-js'), get_template_directory_uri() .'/assets/js/wpentrepreneur-custom.js', array(), wp_get_theme()->get( 'Version' ));
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_style_sheet' );
 

@@ -15,11 +15,11 @@
 <div class="wp-block-group alignfull dark-footer has-base-color has-main-background-color has-text-color has-background has-link-color" style="margin-top:0px;padding-top:var(--wp--preset--spacing--xx-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--xx-large);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
-<p style="font-style:normal;font-weight:600">Ride with WPEntrepreneur</p>
+<p style="font-style:normal;font-weight:600"><?php _e('Ride with WPEntrepreneur', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"main-accent","fontSize":"small"} -->
-<p class="has-main-accent-color has-text-color has-small-font-size">Easily create beautiful, fully-customizable websites with the new WordPress Site Editor and the WPEntrepreneur block theme. No coding skills required. Download for free today!</p>
+<p class="has-main-accent-color has-text-color has-small-font-size"><?php _e('Easily create beautiful, fully-customizable websites with the new WordPress Site Editor and the WPEntrepreneur block theme. No coding skills required. Download for free today!', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"main","iconColorValue":"#150E29","iconBackgroundColor":"base","iconBackgroundColorValue":"#fff","style":{"spacing":{"blockGap":{"top":"20px","left":"20px"}}},"className":"is-style-default","layout":{"type":"flex","justifyContent":"left"}} -->
@@ -37,7 +37,7 @@
 <div class="wp-block-column"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
-<p style="font-style:normal;font-weight:600">Company</p>
+<p style="font-style:normal;font-weight:600"><?php _e('Company', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"textColor":"main-accent","layout":{"type":"constrained"},"fontSize":"small"} -->
@@ -61,48 +61,48 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
-<p style="font-style:normal;font-weight:600">Resources</p>
+<p style="font-style:normal;font-weight:600"><?php _e('Resources', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"textColor":"main-accent","layout":{"type":"constrained"},"fontSize":"small"} -->
 <div class="wp-block-group has-main-accent-color has-text-color has-small-font-size"><!-- wp:paragraph -->
-<p>Blog</p>
+<p><?php _e('Blog', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Contact</p>
+<p><?php _e('Resources', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Support Docs</p>
+<p><?php _e('Support Docs', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Get Help</p>
+<p><?php _e('Get Help', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
-<p style="font-style:normal;font-weight:600">Product</p>
+<p style="font-style:normal;font-weight:600"><?php _e('Product', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"textColor":"main-accent","layout":{"type":"constrained"},"fontSize":"small"} -->
 <div class="wp-block-group has-main-accent-color has-text-color has-small-font-size"><!-- wp:paragraph -->
-<p>Features</p>
+<p><?php _e('Features', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Pricing</p>
+<p><?php _e('Pricing', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Use Cases</p>
+<p><?php _e('Use Cases', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Demo</p>
+<p><?php _e('Demo', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -117,20 +117,20 @@
 <!-- wp:group {"align":"wide"} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"},"elements":{"link":{"color":{"text":"var:preset|color|main-accent"}}}},"textColor":"main-accent","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group has-main-accent-color has-text-color has-link-color"><!-- wp:paragraph {"fontSize":"x-small"} -->
-<p class="has-x-small-font-size">© 2023 · Powered by WordPress and <a href="https://wpwheels.com">WPEntrepreneur</a></p>
+<p class="has-x-small-font-size"><?php _e('© 2023 · Powered by WordPress and', 'wpentrepreneur'); ?> <a href="https://wpwheels.com"><?php _e('WPEntrepreneur', 'wpentrepreneur'); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"flex","flexWrap":"nowrap"},"fontSize":"x-small"} -->
 <div class="wp-block-group has-x-small-font-size"><!-- wp:paragraph -->
-<p>Download</p>
+<p><?php _e('Download', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Visit WPEntrepreneur</p>
+<p><?php _e('Visit WPEntrepreneur', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Visit Mike</p>
+<p><?php _e('Visit Mike', 'wpentrepreneur'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

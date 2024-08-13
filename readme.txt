@@ -1,10 +1,10 @@
 === WPEntrepreneur WordPress Block Theme ===
 Contributors: wpwheels
-Tags: blog, portfolio, entertainment, grid-layout, one-column, two-columns, three-columns, four-columns, block-patterns, block-styles, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, full-width-template, rtl-language-support, style-variations, template-editing, theme-options, translation-ready, wide-blocks
+Tags: blog, portfolio, entertainment, grid-layout, one-column, two-columns, three-columns, four-columns, block-patterns, block-styles, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, full-width-template, style-variations, template-editing, theme-options, wide-blocks
 Requires at least: 6.2
-Tested up to: 6.5
+Tested up to: 6.6
 Requires PHP: 7.2
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -15,7 +15,7 @@ WPEntrepreneur is an elegantly designed theme tailored for creating stunning wpe
 
 == Copyright ==
 
-WPEntrepreneur Theme, (C) 2023 WP Wheels
+WPEntrepreneur Theme, (C) 2024 WPWheels
 WPEntrepreneur is distributed under the terms of the GNU GPL.
 
 WPEntrepreneur Theme bundles the following third-party resources:
@@ -31,57 +31,54 @@ Source: https://github.com/googlefonts/RobotoMono
 
 == Image Used ==
 
-Images for theme screenshot
-hero-banner.webp
-License: pexels provides images under CC0 1.0 Universal (CC0 1.0) 
-license: https://creativecommons.org/publicdomain/zero/1.0/
-Source: https://www.pexels.com/photo/man-wearing-white-dress-shirt-and-black-blazer-2182970/
+hero-banner.webp for hero-dark pattern, https://pxhere.com/
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://pxhere.com/en/photo/675849
 
-avatar-1.webp
-License: stocksnap provides images under CC0 1.0 Universal (CC0 1.0) 
-license: https://creativecommons.org/publicdomain/zero/1.0/
+avatar-1.webp for Testiomonials, Credit Brooke Cagle
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://stocksnap.io/license
 Source: https://stocksnap.io/photo/people-man-A3WDGDTBI6
 
-pexels-chuck.jpg
-License: pexels provides images under CC0 1.0 Universal (CC0 1.0) 
-license: https://creativecommons.org/publicdomain/zero/1.0/
-Source: https://www.pexels.com/photo/male-photographer-using-vintage-camera-7808618/
+pexels-chuck.jpg for Portfolio Section, https://pxhere.com/
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://pxhere.com/en/photo/1431757
 
-pexels-rachel-claire.jpg
-License: pexels provides images under CC0 1.0 Universal (CC0 1.0) 
-license: https://creativecommons.org/publicdomain/zero/1.0/
-Source: https://www.pexels.com/photo/anonymous-male-artist-painting-on-easel-in-workshop-in-daylight-5490266/
+pexels-rachel-claire.jpg for Portfolio Section, https://pxhere.com/
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://pxhere.com/en/photo/1241547
 
-pexels-rozegold.jpg
-License: pexels provides images under CC0 1.0 Universal (CC0 1.0) 
-license: https://creativecommons.org/publicdomain/zero/1.0/
-Source: https://www.pexels.com/photo/a-man-takes-a-photo-reflection-of-a-vehicle-side-mirror-2887774/
+pexels-rozegold.jpg for Portfolio Section, https://pxhere.com/
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://pxhere.com/en/photo/102026
 
-pexels-shvetsa.jpg
-License: pexels provides images under CC0 1.0 Universal (CC0 1.0) 
-license: https://creativecommons.org/publicdomain/zero/1.0/
-Source: https://www.pexels.com/photo/creative-painters-drawing-at-table-5642024/
+pexels-shvetsa.jpg for Portfolio Section, https://pxhere.com/
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://pxhere.com/en/photo/892149
 
-pexels-zdmit.jpg
-License: pexels provides images under CC0 1.0 Universal (CC0 1.0) 
-license: https://creativecommons.org/publicdomain/zero/1.0/
-Source: https://www.pexels.com/photo/unrecognizable-woman-demonstrating-retro-photo-camera-6833461/
+pexels-zdmit.jpg for Portfolio Section, https://pxhere.com/
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://pxhere.com/en/photo/916925
 
-pexels-cottonbro.jpg
-License: pexels provides images under CC0 1.0 Universal (CC0 1.0) 
-license: https://creativecommons.org/publicdomain/zero/1.0/
-Source: https://www.pexels.com/photo/paint-brush-on-brown-pocket-3778491/
+pexels-cottonbro.jpg for Portfolio Section, https://pxhere.com/
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://pxhere.com/en/photo/1109951
 
 placeholder-image.jpg
-Placeholder image is crated by our own.
-
 bg-texture.webp
-BG Texture image is crated by our own.
+placeholder image and bg-texture image is crated by our own.
+license: https://creativecommons.org/publicdomain/zero/1.0/
 
 wow.min.js
 license: https://github.com/graingert/WOW/blob/master/LICENSE
 Source: https://github.com/graingert/WOW
-
 
 animate.min.css
 license: https://github.com/animate-css/animate.css/blob/main/LICENSE
