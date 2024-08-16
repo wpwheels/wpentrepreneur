@@ -42,7 +42,7 @@
             <!-- wp:image {"id":456,"sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-rounded"} -->
 
             <figure class="wp-block-image aligncenter size-full is-style-rounded"><img
-                    src="<?php echo esc_url(get_template_directory_uri()); ?>/patterns/images/hero-banner.webp" alt=""
+                    src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-banner.webp" alt=""
                     class="wp-image-456" /></figure>
 
             <!-- /wp:image -->

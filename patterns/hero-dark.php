@@ -37,7 +37,7 @@
 
 <!-- wp:column {"verticalAlignment":"top","width":"45%","style":{"spacing":{"blockGap":"0","padding":{"top":"0","bottom":"0"}}},"className":"is-style-default"} -->
 <div class="wp-block-column is-vertically-aligned-top is-style-default hero-wrap-image" style="padding-top:0;padding-bottom:0;flex-basis:45%"><!-- wp:image {"lightbox":{"enabled":false},"id":456,"sizeSlug":"full","linkDestination":"none","style":{"color":{}},"className":"is-style-rounded-full"} -->
-<figure class="wp-block-image size-full is-style-rounded-full wow animate__animated animate__slideInRight"><img src="<?php echo esc_url( get_template_directory_uri() );?>/patterns/images/hero-banner.webp" alt="" class="wp-image-456"/></figure>
+<figure class="wp-block-image size-full is-style-rounded-full wow animate__animated animate__slideInRight"><img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/images/hero-banner.webp" alt="" class="wp-image-456"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
