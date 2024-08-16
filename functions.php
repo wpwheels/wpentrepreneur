@@ -15,29 +15,80 @@ namespace WPEntrepreneur;
  */
 function setup() {
 
+	// Languages
+	load_theme_textdomain( 'wpwheels', get_template_directory() . '/languages' );
+
+	// Add support for block styles.
+	add_theme_support( 'wp-block-styles' );
+
 	// Enqueue editor styles and fonts.
 	add_editor_style( 'style.css' );
+
+	// Responsive video
+	add_theme_support( 'responsive-embeds' );
+
+	// Custom Logo
+	add_theme_support( 'custom-logo' );
+
+	// Register menus
+	register_nav_menus(
+		array(
+			'primary' => esc_html__( 'Primary Menu', 'wpwheels' ),
+		)
+	);
 
 	// Remove core block patterns.
 	remove_theme_support( 'core-block-patterns' );
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\setup' );
 
-
 /**
- * Enqueue styles.
+ * Theme Enqueue Styles.
  */
 function enqueue_style_sheet() {
 
-	// CSS
-	wp_enqueue_style( sanitize_title( __NAMESPACE__ . 'style-css'), get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
-	wp_enqueue_style( sanitize_title( __NAMESPACE__ . 'animate-css'), get_template_directory_uri() . '/assets/css/animate.min.css', array(), wp_get_theme()->get( 'Version' ) );
+	// Enqueue theme stylesheet with versioning based on file modification time.
+	wp_enqueue_style(
+		sanitize_title( __NAMESPACE__ . 'animate-css'),
+		get_theme_file_uri( 'assets/library/css/animate.min.css' ),
+		array(),
+		filemtime( get_theme_file_path( 'assets/library/css/animate.min.css' ) )
+	);
 
-	// JS
-	wp_enqueue_script(sanitize_title(__NAMESPACE__ . 'wow-js'), get_template_directory_uri() . '/assets/js/wow.min.js', array(), wp_get_theme()->get( 'Version' ));
-	wp_enqueue_script(sanitize_title(__NAMESPACE__ . 'custom-js'), get_template_directory_uri() .'/assets/js/wpentrepreneur-custom.js', array(), wp_get_theme()->get( 'Version' ));
+	wp_enqueue_style(
+		sanitize_title( __NAMESPACE__ . 'style-css'),
+		get_theme_file_uri( 'build/public/index.css' ),
+		array(),
+		filemtime( get_theme_file_path( 'build/public/index.css' ) )
+	);
+
+	// Enable automatic RTL support by looking for index-rtl.css.
+	wp_style_add_data( sanitize_title( __NAMESPACE__ . 'style-css'), 'rtl', 'replace' );
+
+	// Enqueue the JavaScript file with jQuery as a dependency and versioning based on file modification time.
+	wp_enqueue_script(
+		sanitize_title(__NAMESPACE__ . 'wow-js'),
+		get_theme_file_uri( 'assets/library/js/wow.min.js' ),
+		array(),
+		filemtime( get_theme_file_path( 'assets/library/js/wow.min.js' ) ),
+		true
+	);
+
+	wp_enqueue_script(
+		sanitize_title(__NAMESPACE__ . 'index-js'),
+		get_theme_file_uri( 'build/public/index.js' ),
+		array(),
+		filemtime( get_theme_file_path( 'build/public/index.js' ) ),
+		true
+	);
+
 }
+
+// Enqueue styles for the front-end.
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_style_sheet' );
+
+// Enqueue styles for the block editor.
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_style_sheet' );
 
 
 /**
@@ -146,7 +197,7 @@ function enqueue_custom_block_styles() {
 		);
 	}
 }
-add_action( 'init', __NAMESPACE__ . '\enqueue_custom_block_styles' );
+//add_action( 'init', __NAMESPACE__ . '\enqueue_custom_block_styles' );
 
 
 /**
@@ -187,8 +238,6 @@ function pattern_categories() {
 			'label' => __( 'Contact', 'wpentrepreneur' )
 		)
 	
-	
-	
 	);
 
 	foreach ( $block_pattern_categories as $name => $properties ) {
@@ -226,3 +275,9 @@ function template_part_areas( array $areas ) {
 }
 add_filter( 'default_wp_template_part_areas', __NAMESPACE__ . '\template_part_areas' );
 
+// Admin only classes.
+if ( is_admin() ) {
+    
+    // Recommend plugins.
+    require_once get_theme_file_path( '/dashboard/class-dashboard.php' );
+}
