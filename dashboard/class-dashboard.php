@@ -3,23 +3,6 @@
  * Dashboard Page
  *
  */
-/**
- * Check pro plugin active ?
- */
-if ( ! function_exists( 'wpentrepreneur_is_pro_active' ) ) {
-	function wpentrepreneur_is_pro_active() {
-		// Replace 'plugin-folder/plugin-file.php' with the actual path of the pro plugin
-		$pro_plugin = 'blockwheels-pro/blockwheels.php';
-
-		// Check if the plugin is active
-		if ( is_plugin_active( $pro_plugin ) ) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-}
-
 if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 	/**
 	 * Main class.
@@ -162,7 +145,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 				),
 			);
 
-			if ( wpentrepreneur_is_pro_active() ) {
+			if ( $this->is_pro_plugin() ) {
 				$this->starter_template_plugins[] = array(
 					'name'   => __( 'Blockwheels Pro', 'wpentrepreneur' ),
 					'desc'   => __( 'Awesome starter templates for themes made by WPWheels.', 'wpentrepreneur' ),
@@ -321,7 +304,8 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
                 <div class="wpwheels-notice-template-import">
                     <?php if ( $btn_data['plugins_active'] ) : ?>
                     <p><a href="<?php echo esc_url( $this->redirect_template_url ); ?>"
-                            class="button button-primary"><?php esc_html_e( 'Get Started', 'wpentrepreneur' ); ?></a></p>
+                            class="button button-primary"><?php esc_html_e( 'Get Started', 'wpentrepreneur' ); ?></a>
+                    </p>
                     <?php else : ?>
                     <div class="starter-template-action">
                         <div class="starter-template-plugins-info">
@@ -678,6 +662,23 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 			);
 		}
 
+
+		/**
+		 * Check pro plugin active ?
+		 *
+		 * @since 1.0.0
+		 */
+		public function is_pro_plugin() {
+			// Replace 'plugin-folder/plugin-file.php' with the actual path of the pro plugin
+			$pro_plugin = 'blockwheels-pro/blockwheels.php';
+
+			// Check if the plugin is active
+			if ( is_plugin_active( $pro_plugin ) ) {
+				return true;
+			} else {
+				return false;
+			}
+		}
 	}
 
 }

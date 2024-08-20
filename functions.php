@@ -16,7 +16,7 @@ namespace WPEntrepreneur;
 function setup() {
 
 	// Languages
-	load_theme_textdomain( 'wpwheels', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'wpentrepreneur', get_template_directory() . '/languages' );
 
 	// Add support for block styles.
 	add_theme_support( 'wp-block-styles' );
@@ -33,7 +33,7 @@ function setup() {
 	// Register menus
 	register_nav_menus(
 		array(
-			'primary' => esc_html__( 'Primary Menu', 'wpwheels' ),
+			'primary' => esc_html__( 'Primary Menu', 'wpentrepreneur' ),
 		)
 	);
 
