@@ -70,7 +70,7 @@
                 <!-- wp:image {"id":56,"width":"132px","height":"132px","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-rounded-full"} -->
 
                 <figure class="wp-block-image aligncenter size-full is-resized is-style-rounded-full"><img
-                        src="<?php echo esc_url(get_template_directory_uri()); ?>/patterns/images/avatar-1.webp" alt=""
+                        src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/avatar-1.webp" alt=""
                         class="wp-image-56" style="object-fit:cover;width:132px;height:132px" /></figure>
 
                 <!-- /wp:image -->
@@ -107,7 +107,7 @@
                 <!-- wp:image {"id":56,"width":"132px","height":"132px","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-rounded-full"} -->
 
                 <figure class="wp-block-image aligncenter size-full is-resized is-style-rounded-full"><img
-                        src="<?php echo esc_url(get_template_directory_uri()); ?>/patterns/images/avatar-1.webp" alt=""
+                        src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/avatar-1.webp" alt=""
                         class="wp-image-56" style="object-fit:cover;width:132px;height:132px" /></figure>
 
                 <!-- /wp:image -->
@@ -152,7 +152,7 @@
                 <!-- wp:image {"id":56,"width":"132px","height":"132px","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-rounded-full"} -->
 
                 <figure class="wp-block-image aligncenter size-full is-resized is-style-rounded-full"><img
-                        src="<?php echo esc_url(get_template_directory_uri()); ?>/patterns/images/avatar-1.webp" alt=""
+                        src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/avatar-1.webp" alt=""
                         class="wp-image-56" style="object-fit:cover;width:132px;height:132px" /></figure>
 
                 <!-- /wp:image -->
@@ -189,7 +189,7 @@ IdeaFlow', 'wpentrepreneur'); ?></p>
                 <!-- wp:image {"id":56,"width":"132px","height":"132px","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-rounded-full"} -->
 
                 <figure class="wp-block-image aligncenter size-full is-resized is-style-rounded-full"><img
-                        src="<?php echo esc_url(get_template_directory_uri()); ?>/patterns/images/avatar-1.webp" alt=""
+                        src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/avatar-1.webp" alt=""
                         class="wp-image-56" style="object-fit:cover;width:132px;height:132px" /></figure>
 
                 <!-- /wp:image -->
@@ -234,7 +234,7 @@ IdeaFlow', 'wpentrepreneur'); ?></p>
                 <!-- wp:image {"id":56,"width":"132px","height":"132px","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-rounded-full"} -->
 
                 <figure class="wp-block-image aligncenter size-full is-resized is-style-rounded-full"><img
-                        src="<?php echo esc_url(get_template_directory_uri()); ?>/patterns/images/avatar-1.webp" alt=""
+                        src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/avatar-1.webp" alt=""
                         class="wp-image-56" style="object-fit:cover;width:132px;height:132px" /></figure>
 
                 <!-- /wp:image -->
@@ -271,7 +271,7 @@ IdeaFlow', 'wpentrepreneur'); ?></p>
                 <!-- wp:image {"id":56,"width":"132px","height":"132px","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-rounded-full"} -->
 
                 <figure class="wp-block-image aligncenter size-full is-resized is-style-rounded-full"><img
-                        src="<?php echo esc_url(get_template_directory_uri()); ?>/patterns/images/avatar-1.webp" alt=""
+                        src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/avatar-1.webp" alt=""
                         class="wp-image-56" style="object-fit:cover;width:132px;height:132px" /></figure>
 
                 <!-- /wp:image -->
