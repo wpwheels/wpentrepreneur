@@ -31,12 +31,14 @@ module.exports = function (grunt) {
           "!phpcs.xml",
           "!CONTRIBUTING.md",
           "!phpcs.ruleset.xml",
+          "!editorconfig.txt",
           /**
            * Are you developer? Then add below files.
            */
           "!Gruntfile.js",
           "!postcss.config.js",
           "!webpack.config.js",
+          "!tailwind.config.js",
           "!package.json",
           "!package-lock.json",
           "!composer.json",
