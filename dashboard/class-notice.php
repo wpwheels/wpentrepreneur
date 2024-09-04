@@ -1,29 +1,35 @@
 <?php
-/**
- * Dashboard Page
+ /**
+ * This file adds functions to display admin notices for the WPEntrepreneur WordPress theme.
  *
+ * @package wpentrepreneur
+ * @author  WPWheels
+ * @license GNU General Public License v2 or later
+ * @link    https://wpwheels.com
  */
-if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
+
+namespace WPEntrepreneur\Dashboard;
+
 	/**
-	 * Main class.
+	 * Main Notice class.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0.3
 	 */
-	class WPEntrepreneur_Dashboard {
+	class Notice {
 
 		/**
 		 * Instance
 		 *
 		 * @access private
 		 * @var null $instance
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		private static $instance;
 
 		/**
 		 * Initiator
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 * @return object initialized object of class.
 		 */
 		public static function get_instance() {
@@ -38,7 +44,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		 *
 		 * @access private
 		 * @var null $theme_name
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		private $theme_name;
 
@@ -47,7 +53,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		 *
 		 * @access private
 		 * @var null $theme_version
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		private $theme_version;
 
@@ -56,7 +62,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		 *
 		 * @access private
 		 * @var null $theme_slug
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		private $theme_slug;
 
@@ -65,7 +71,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		 *
 		 * @access private
 		 * @var null $page_slug
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		private $page_slug;
 
@@ -74,7 +80,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		 *
 		 * @access private
 		 * @var null $review_url
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		private $review_url;
 
@@ -83,7 +89,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		 *
 		 * @access private
 		 * @var null $redirect_template_url
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		private $redirect_template_url;
 
@@ -92,7 +98,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		 *
 		 * @access private
 		 * @var array $errors
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		private $errors = array();
 
@@ -101,14 +107,14 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		 *
 		 * @access private
 		 * @var array $starter_template_plugins
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		private $starter_template_plugins = array();
 
 		/**
 		 * Constructor.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		public function __construct() {
 
@@ -190,7 +196,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Update the reminder time.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		public function init_reminder() {
 			if ( ! get_option( 'wpentrepreneur_reminder_time' ) ) {
@@ -201,7 +207,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Delete the saved options.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		public function reset_notices() {
 			delete_option( 'wpentrepreneur_reminder_time' );
@@ -211,7 +217,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Generate proper data for starter plugin installation.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		public function starter_template_button() {
 			$plugins_active = true;
@@ -248,7 +254,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Dislpay admin notices.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		public function display_admin_notice() {
 
@@ -265,7 +271,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Display welcome notice.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		public function display_welcome_notice() {
 			$user     = wp_get_current_user();
@@ -295,7 +301,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
                 <?php
 								printf(
 									/* translators: %s: Theme Name. */
-									__( '%1$s is now installed and ready for use. We highly recommend installing and activating the <b>BlockWheels</b> Plugin to unlock freemium website templates/demos, 20+ advanced Gutenberg Blocks, and patterns, facilitating the creation of stunning websites with utmost ease.', 'wpentrepreneur' ),
+									__( '%1$s is now installed and ready for use. We highly recommend installing and activating the <b>BlockWheels</b> Plugin to unlock freemium website templates/demos, 25+ advanced Gutenberg Blocks, and patterns, facilitating the creation of stunning websites with utmost ease.', 'wpentrepreneur' ),
 									$this->theme_name,
 								);
 							?>
@@ -351,7 +357,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Display review notice.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		public function display_review_notice() {
 			?>
@@ -411,7 +417,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Should we display notices on this screen?
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 *
 		 * @return bool
 		 */
@@ -433,7 +439,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Has a notice been dismissed?
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 *
 		 * @param string $notice Notice name.
 		 * @return bool
@@ -446,7 +452,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Stores a dismissed notice in database
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 *
 		 * @param string $notice Notice to be Dismissed.
 		 * @return void
@@ -463,7 +469,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Get plugin status.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 *
 		 * @param string $plugin_file Plugin slug.
 		 */
@@ -483,7 +489,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Get error msg.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 *
 		 * @param string $type Error type.
 		 */
@@ -500,7 +506,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Acticate plugin callback.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		public function activate_plugin() {
 
@@ -553,7 +559,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Enqueue scripts for dashboard page.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 *
 		 * @param string $hook Page hook.
 		 */
@@ -615,7 +621,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Dismiss notice callback
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		public function dismiss_notice() {
 
@@ -666,7 +672,7 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		/**
 		 * Check pro plugin active ?
 		 *
-		 * @since 1.0.0
+		 * @since 1.0.3
 		 */
 		public function is_pro_plugin() {
 			// Replace 'plugin-folder/plugin-file.php' with the actual path of the pro plugin
@@ -681,6 +687,4 @@ if ( ! class_exists( 'WPEntrepreneur_Dashboard' ) ) {
 		}
 	}
 
-}
-
-WPEntrepreneur_Dashboard::get_instance();
+Notice::get_instance();

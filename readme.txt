@@ -71,10 +71,16 @@ License: CC0 1.0 Universal (CC0 1.0)
 License URL: https://creativecommons.org/publicdomain/zero/1.0/
 Source: https://pxhere.com/en/photo/1109951
 
+All images from assets/images
 placeholder-image.jpg
 bg-texture.webp
-placeholder image and bg-texture image is crated by our own.
-license: https://creativecommons.org/publicdomain/zero/1.0/
+notice-image.png
+notice-arrow.png
+notice-top-corner.png
+notice-bottom-corner.png are created by our own.
+License: CC0 1.0 Universal (CC0 1.0)
+license URL: https://creativecommons.org/publicdomain/zero/1.0/
+
 
 wow.min.js
 license: https://github.com/graingert/WOW/blob/master/LICENSE
