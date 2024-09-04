@@ -1,5 +1,8 @@
 == Changelog ==
 
+= 1.0.3 - TBD =
+* Added dashobard notice to install recommaded plugins.
+
 = 1.0.2 - 08 August 2024 =
 * Fixed missing string translation.
 

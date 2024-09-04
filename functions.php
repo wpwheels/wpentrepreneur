@@ -55,16 +55,6 @@ function enqueue_style_sheet() {
 		filemtime( get_theme_file_path( 'assets/library/css/animate.min.css' ) )
 	);
 
-	wp_enqueue_style(
-		sanitize_title( __NAMESPACE__ . 'style-css'),
-		get_theme_file_uri( 'build/public/index.css' ),
-		array(),
-		filemtime( get_theme_file_path( 'build/public/index.css' ) )
-	);
-
-	// Enable automatic RTL support by looking for index-rtl.css.
-	wp_style_add_data( sanitize_title( __NAMESPACE__ . 'style-css'), 'rtl', 'replace' );
-
 	// Enqueue the JavaScript file with jQuery as a dependency and versioning based on file modification time.
 	wp_enqueue_script(
 		sanitize_title(__NAMESPACE__ . 'wow-js'),
@@ -87,9 +77,28 @@ function enqueue_style_sheet() {
 // Enqueue styles for the front-end.
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_style_sheet' );
 
-// Enqueue styles for the block editor.
-add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_style_sheet' );
+/**
+ * Theme Enqueue Style for the editor and front end.
+ */
+function enqueue_dev_style_sheet() {
 
+	// Enqueue theme stylesheet with versioning based on file modification time.
+	wp_enqueue_style(
+		sanitize_title( __NAMESPACE__ . 'style-css'),
+		get_theme_file_uri( 'build/public/index.css' ),
+		array(),
+		filemtime( get_theme_file_path( 'build/public/index.css' ) )
+	);
+
+	// Enable automatic RTL support by looking for index-rtl.css.
+	wp_style_add_data( sanitize_title( __NAMESPACE__ . 'style-css'), 'rtl', 'replace' );
+}
+
+// Enqueue styles for the front-end.
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_dev_style_sheet' );
+
+// Enqueue styles for the block editor.
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_dev_style_sheet' );
 
 /**
  * Add Dashicons for use with block styles.
